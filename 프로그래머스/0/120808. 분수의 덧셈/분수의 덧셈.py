@@ -6,7 +6,6 @@ def solution(numer1, denom1, numer2, denom2):
             a, b = b, a % b
         return a
     
-    rst = solve(numer, denom)
+    약수 = solve(numer, denom)
     
-    # 3. 약분
-    return [numer // rst, denom // rst]
+    return [numer // 약수, denom // 약수]
